@@ -35,3 +35,12 @@ def friends(x): #works better without arg
 
         
 list = friends('Jono') #just init via friends()
+
+
+# this works for the assignment
+
+def friendx(friend_names):
+    friend_list = friend_names.split(', ') # you don't need a separator (sep) if x args are a string per name like 'Taro'
+    return [friend for friend in friend_list if len(friend) == 4]
+    
+friendx('Jaro, Taro, Maro, Caro, Varo, Hojou, Hodor, Jon')

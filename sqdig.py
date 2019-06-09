@@ -5,7 +5,7 @@ def sqdigits(num):
     >>> sqdigits(24)
     416
     """
-    digits = [int(x) for x in str(num)] #make a list of int values
+    digits = [int(x) for x in str(abs(num))] #make a list of int values
     for digit in digits:
         print(digit*digit, end="") #end= indicates delimiter in print
 

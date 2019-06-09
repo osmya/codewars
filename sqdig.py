@@ -8,8 +8,18 @@ def sqdigits(num):
     digits = [int(x) for x in str(abs(num))] #make a list of int values
     for digit in digits:
         print(digit*digit, end="") #end= indicates delimiter in print
+        
 
 #other solutions
+
+""" Best practices
+
+def square_digits(num):
+    ret = ""
+    for x in str(num):
+        ret += str(int(x)**2)
+    return int(ret)
+"""
 
 """
 def sq(num):

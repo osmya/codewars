@@ -18,3 +18,20 @@ def friend(): #doctest needs work
             print(friend)
         
 friend()
+
+
+# rewrote it with a return direct to list and initial arg that can be a list
+
+def friends(x):
+    friend_list = [x]
+    filling_active = True
+    while filling_active:
+        name = input("Enter a name ")
+        friend_list = friend_list + [name]
+        add = input("Do you want to add another? ")
+        if add == 'no':
+            filling_active = False
+    return [friend for friend in friend_list if len(friend) == 4]
+
+        
+list = friends('Jono')

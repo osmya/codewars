@@ -22,7 +22,7 @@ friend()
 
 # rewrote it with a return direct to list and initial arg that can be a list
 
-def friends(x):
+def friends(x): #works better without arg
     friend_list = [x]
     filling_active = True
     while filling_active:
@@ -34,4 +34,4 @@ def friends(x):
     return [friend for friend in friend_list if len(friend) == 4]
 
         
-list = friends('Jono')
+list = friends('Jono') #just init via friends()

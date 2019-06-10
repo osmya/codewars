@@ -1,11 +1,11 @@
 # final woring code
 
-def friend(friend_names):
+def friend(friend_names): # friend names must be a list arg e.g. friend(['Jones', 'Dan'])
     friend_list = []
     for friend in friend_names:
         if len(friend) == 4:
             friend_list += [friend]
-    return friend_list
+    return friend_list 
     
 
 

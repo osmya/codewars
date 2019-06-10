@@ -1,3 +1,17 @@
+# final woring code
+
+def friend(friend_names):
+    friend_list = []
+    for friend in friend_names:
+        if len(friend) == 4:
+            friend_list += [friend]
+    return friend_list
+    
+
+
+
+
+
 def friend(): #doctest needs work
     """Make a program that filters a list of strings and returns a list 
     with only strings of 4 letters in it.

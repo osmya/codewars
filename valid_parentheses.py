@@ -21,7 +21,6 @@ def valid_parentheses(string):
     """
     assert len(string) <= 100, 'insert a shorter string, max 100 lenght'
     par_list = [x for x in string if x == '(' or x == ')']
-    # could make it with a flag e.g. count = 0
     listlen = len(par_list)
     if listlen == 0:
         return True

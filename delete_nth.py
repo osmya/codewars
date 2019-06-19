@@ -15,7 +15,7 @@ def delete_nth(order, max_e):
                 k += 1
                 if i in resp:
                     break
-    return new_order
+    return resp
 
 
 # alt solution

@@ -1,4 +1,4 @@
-def validBraces(string):
+def valid_braces(string):
     braces = {"(": ")", "[": "]", "{": "}"}
     stack = []
     for character in string:

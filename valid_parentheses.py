@@ -52,3 +52,15 @@ Can either return False or True and it invalidates the program
 
 Issue link https://www.codewars.com/kata/valid-parentheses/discuss/python
 """
+
+# best solution
+def valid_parentheses2(string):
+    count = 0
+    for i in string:
+        if i == "(":
+            count += 1
+        elif i == ")":
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0
